@@ -165,10 +165,10 @@ void loop() {
     digitalWrite(13, HIGH);
     arranque = true;
     millisInicio = millis();
-  } else if ((millis() >= (millisInicio + 0)) && (arranque == true) && (millisInicio > 0)) {
+  } else if ((millis() >= (millisInicio + 5000)) && (arranque == true) && (millisInicio > 0)) {
 
 
-    if (millis() - millisInicio < 0 + 100) {
+    if (millis() - millisInicio < 5000 + 100) {
       vel = vel_estrategia / 2;
     } else if (millis() - millisInicio < 0 + 250) {
       vel = vel_estrategia / 1.5;
